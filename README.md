@@ -114,5 +114,12 @@ free; running them needs a licence key, entered in the setup wizard.
 - **Commercial licences:** <https://vallus.eu/#pricing>
 
 The open-source components inside vallus and their licences are listed in
-`THIRD_PARTY_NOTICES.txt`, shipped in every package on
-<https://downloads.vallus.eu>.
+`THIRD_PARTY_NOTICES.txt`, next to the licence itself in every image:
+
+```bash
+docker run --rm --entrypoint cat ghcr.io/pgexpandit/vallus-rs:latest \
+  /usr/share/doc/vallus/THIRD_PARTY_NOTICES.txt
+```
+
+The list belongs to the version you pulled. The lists of every published version
+are on <https://downloads.vallus.eu>, under each release.
